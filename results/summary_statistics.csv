@@ -1,0 +1,10 @@
+"","combined_data$design","combined_data$time.mean","combined_data$time.sd"
+"1","results 1.design_grid",70.23600,10.53052
+"2","results 2.reduced_grid_design",83.16100,14.79241
+"3","results 3.random_design_1",69.67450,10.95160
+"4","results 4.random_design_2",70.31600,11.78671
+"5","results 5.random_design_3",69.35650,10.87950
+"6","results 6.expert design 1",80.75800,14.11995
+"7","results 7.expert design 2",56.25500,13.42524
+"8","results 8.Clustered Design",77.17700,16.93110
+"9","results 9.sparse_border_design",80.78600,16.28760

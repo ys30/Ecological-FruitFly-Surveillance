@@ -1,0 +1,9 @@
+"","results 1.design_grid","results 2.reduced_grid_design","results 3.random_design_1","results 4.random_design_2","results 5.random_design_3","results 6.expert design 1","results 7.expert design 2","results 8.Clustered Design"
+"results 2.reduced_grid_design",4.41941546075977e-195,NA,NA,NA,NA,NA,NA,NA
+"results 3.random_design_1",1,6.81963794026441e-212,NA,NA,NA,NA,NA,NA
+"results 4.random_design_2",1,9.73382899569112e-193,1,NA,NA,NA,NA,NA
+"results 5.random_design_3",1,1.07074952596423e-221,1,0.883423633543912,NA,NA,NA,NA
+"results 6.expert design 1",1.59346079984916e-130,6.51342573015127e-07,1.61738685706418e-144,1.38359368434707e-128,9.670922445977e-153,NA,NA,NA
+"results 7.expert design 2",3.16635968871038e-227,0,7.47141582779929e-210,9.41785434405041e-230,2.69155999547937e-200,0,NA,NA
+"results 8.Clustered Design",1.59559541988519e-57,6.80355266953556e-43,4.45082799437074e-67,3.20602894642722e-56,8.34140791351265e-73,1.83520516420266e-15,0,NA
+"results 9.sparse_border_design",3.31552307137333e-131,9.50391788629849e-07,3.11437766830409e-145,2.91100836023808e-129,1.78291419169578e-153,1,0,1.05007994266593e-15
