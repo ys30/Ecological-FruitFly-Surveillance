@@ -36,5 +36,9 @@ The project aims to explore:
 
 ---
 
-## 🗂 Project Structure
-
+## Project Structure
+- R/ Core modelling scripts
+- data/ Raw and processed input data
+- results/ Simulation outputs
+- docs/ Project documentation and references
+- outputs/ Figures and exported results
