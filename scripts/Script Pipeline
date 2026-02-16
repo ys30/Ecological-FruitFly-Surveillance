@@ -1,0 +1,24 @@
+## Script Pipeline
+
+The modelling workflow follows this sequence:
+
+1. `01_fruitfly_population.R`
+   - Generates fruit fly population spatial distribution.
+
+2. `02_calc_distances.R`
+   - Computes spatial distances between traps and population points.
+
+3. `03_make_grid_design.R`
+   - Generates surveillance grid designs.
+
+4. `04_run_sim.R`
+   - Runs a single stochastic simulation.
+
+5. `05_run_many_sims.R`
+   - Performs repeated simulation iterations.
+
+6. `06_show_design.R`
+   - Visualizes surveillance layout and detection zones.
+
+7. `07_plot_hist_density.R`
+   - Produces histograms and density plots for simulation results.
