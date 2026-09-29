@@ -1,44 +1,70 @@
-# Ecological-FruitFly-Surveillance
-A spatially explicit simulation and surveillance optimization framework for fruit fly population monitoring and ecological risk assessment.
+# Spatial Ecological Surveillance Simulation
 
----
+A spatially explicit **ecological risk and surveillance-design** project that uses stochastic simulation to compare fruit-fly monitoring strategies under heterogeneous spatial conditions.
 
-## Project Overview
+## Decision problem
 
-This project develops a spatially explicit modelling and simulation framework to evaluate surveillance strategies for fruit fly population detection and monitoring.
+Environmental surveillance systems must decide **where and how densely to monitor** when risk is spatially uneven. This project builds a simulation workflow for testing alternative trap-placement designs and examining how spatial structure affects detection performance.
 
-The framework integrates:
+**Focus:** ecological surveillance · spatial risk · simulation · monitoring design  
+**Tools:** R · spatial analysis · stochastic simulation · statistical comparison
 
-- Landscape-level spatial structure
-- Fruit fly population dynamics
-- Trap/grid surveillance design
-- Distance-based detection probability
-- Repeated stochastic simulations
+## Analytical workflow
 
-The objective is to evaluate how spatial heterogeneity influences surveillance efficiency and pest detection probability.
+1. **Simulate population patterns** — generate fruit-fly population conditions used in surveillance experiments.
+2. **Calculate spatial distances** — quantify relationships between population locations and surveillance locations.
+3. **Construct monitoring designs** — evaluate grid, reduced-grid, random, expert, clustered, and sparse-border designs represented in the repository data.
+4. **Run stochastic simulations** — repeatedly evaluate surveillance designs under simulated conditions.
+5. **Summarize performance** — aggregate simulation outputs and compare design behavior.
+6. **Quantify uncertainty** — produce percentile summaries, confidence-interval/CDF analyses, and pairwise statistical comparisons.
 
----
+## Repository map
 
-## Scientific Context
+```
+data/       # Alternative surveillance designs
+scripts/    # Population, distance, design, simulation, and analysis workflow
+results/    # Simulation outputs, statistical summaries, and figures
+outputs/    # Exported analytical outputs
+docs/       # Supporting documentation
+```
 
-The modelling approach is informed by:
+Key scripts include:
 
-- Triska (2018), *Pest Management Science*  
-- Spatially heterogeneous surveillance theory  
-- Grid-based trap placement design  
-- Stochastic simulation of pest spread  
+```
+01_fruitfly_population.R
+02_calc_distances.R
+03_make_grid_design.R
+04_run_sim.R
+05_run_many_sims.R
+06_show_design.R
+07_plot_hist_density.R
+08_result summary.R
+09_CDF with confidence intervals.R
+```
 
-The project aims to explore:
+## Outputs currently included
 
-- Detection probability under different grid densities  
-- Spatial risk concentration  
-- Surveillance design optimization  
+The repository contains simulation result tables, percentile summaries, pairwise t-test results, and figures generated from the surveillance-design experiments.
 
----
+## What this repository demonstrates
 
-## Project Structure
-- R/ Core modelling scripts
-- data/ Raw and processed input data
-- results/ Simulation outputs
-- docs/ Project documentation and references
-- outputs/ Figures and exported results
+- Translating an ecological monitoring question into a quantitative simulation
+- Spatially explicit surveillance design
+- Repeated stochastic simulation
+- Comparison of alternative monitoring strategies
+- Statistical summaries and uncertainty analysis
+- Reproducible R workflow from design inputs to analytical outputs
+
+## Scientific context
+
+The modeling approach is informed by spatially heterogeneous surveillance theory and trap-placement design, including work referenced in the project documentation such as Triska (2018, *Pest Management Science*).
+
+## Portfolio context
+
+This project complements my broader work in **environmental and climate data science**, GIS/remote sensing, ecological modeling, and decision-support analytics.
+
+[View my environmental & climate data portfolio](https://ys30.github.io/)
+
+## License
+
+MIT License
