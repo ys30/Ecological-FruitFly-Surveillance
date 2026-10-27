@@ -46,6 +46,26 @@ Key scripts include:
 
 The repository contains simulation result tables, percentile summaries, pairwise t-test results, and figures generated from the surveillance-design experiments.
 
+## Reported simulated detection-time summaries
+
+From [`results/summary_statistics.csv`](results/summary_statistics.csv), the following are reported means and standard deviations of the output variable `time` (units and simulation stopping rules must be checked against the scripts before interpreting as calendar duration):
+
+| Design | Mean | SD |
+|---|---:|---:|
+| Grid | 70.24 | 10.53 |
+| Reduced grid | 83.16 | 14.79 |
+| Random design 1 | 69.67 | 10.95 |
+| Expert design 1 | 80.76 | 14.12 |
+| Expert design 2 | 56.26 | 13.43 |
+| Clustered | 77.18 | 16.93 |
+| Sparse border | 80.79 | 16.29 |
+
+The table summarizes **simulation outcomes under this project's assumptions**, not field-validated trap effectiveness. All nine designs are represented in the CSV. Pairwise statistical-test output is available at [`results/pairwise_t_test_results.csv`](results/pairwise_t_test_results.csv), but it should be interpreted only after verifying run independence, replication counts, and multiplicity handling.
+
+## Reproducibility limitations
+
+Run scripts from the project root in numeric order, paying attention to filenames containing spaces. Document the random seed, number of simulation replicates, time units, and input design geometry before attempting strict replication; these settings are not specified in the current README.
+
 ## What this repository demonstrates
 
 - Translating an ecological monitoring question into a quantitative simulation
