@@ -73,7 +73,7 @@ All nine archived results files contain **2,000 recorded detections each** (18,0
 Within the recorded simulation outputs, **Expert design 2 has the shortest mean detection time** and Reduced grid the longest. Expert design 2 is **13.98 days earlier** on average than the 100-trap Grid; the 25-trap Reduced grid is **12.93 days later** on average than Grid. This does **not** establish that Expert design 2 is a universally optimal trap network: trap counts, placement budgets, undetected replicate frequencies, and parameter sensitivity must also be compared before drawing operational conclusions.
 
 ### Outputs available
-- [Detection-time comparison chart](figures/detection_time_comparison.svg) and [trap-effort comparison chart](figures/trap_effort_tradeoff.svg)
+- [Detection-time comparison chart](figures/detection_time_comparison.svg) and [nine-layout spatial comparison chart](figures/nine_trap_spatial_layouts.svg)
 - [Detection-time summary](results/summary_statistics.csv)
 - [90th-percentile summaries](results/percentile_90.csv) and [99th-percentile summaries](results/percentile_99.csv)
 - [Bonferroni-adjusted pairwise t-test table](results/pairwise_t_test_results.csv)
