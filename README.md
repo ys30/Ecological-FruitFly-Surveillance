@@ -23,11 +23,11 @@ This is a **comparative simulation and analysis of supplied and scripted monitor
 
 ![Mean detection day across nine trap layouts](figures/detection_time_comparison.svg)
 
-### Monitoring effort versus detection delay
+### Spatial trap placement: where are traps located?
 
-![Design-aligned dot plot of mean detection day with trap counts shown separately](figures/trap_effort_tradeoff.svg)
+![Nine-panel spatial comparison of trap locations from the design CSVs](figures/trap_effort_tradeoff.svg)
 
-To avoid overlapping the eight 100-trap layouts at the same x-coordinate, this view places **each design on its own row**, plots mean detection day on a common numerical axis, and displays its trap count in an aligned column. The chart is a comparison of effort levels and conditional detection times, **not** a fitted cost–effectiveness relationship.
+**Figure 2 shows spatial placement, not a second detection-time ranking.** Each panel plots the original trap coordinates at the same scale (grid pixels; 10 m per pixel), with the layout's trap count and conditional mean detection day labeled for context. The 25-trap reduced grid can be visually compared with the eight 100-trap alternatives. These are simulation layouts, not field-deployment maps.
 
 The charts show **conditional detection-time summaries**, not detection rates. The archived output omits non-detections, and the total number of attempted runs is unavailable.
 
