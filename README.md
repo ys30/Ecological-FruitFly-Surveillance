@@ -25,7 +25,9 @@ This is a **comparative simulation and analysis of supplied and scripted monitor
 
 ### Monitoring effort versus detection delay
 
-![Number of traps versus mean detection day](figures/trap_effort_tradeoff.svg)
+![Design-aligned dot plot of mean detection day with trap counts shown separately](figures/trap_effort_tradeoff.svg)
+
+To avoid overlapping the eight 100-trap layouts at the same x-coordinate, this view places **each design on its own row**, plots mean detection day on a common numerical axis, and displays its trap count in an aligned column. The chart is a comparison of effort levels and conditional detection times, **not** a fitted cost–effectiveness relationship.
 
 The charts show **conditional detection-time summaries**, not detection rates. The archived output omits non-detections, and the total number of attempted runs is unavailable.
 
