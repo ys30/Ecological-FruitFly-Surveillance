@@ -44,7 +44,9 @@ Reported means and standard deviations are transcribed from [`results/summary_st
 | Clustered design | 77.18 | 16.93 |
 | Sparse-border design | 80.79 | 16.29 |
 
-Within the recorded simulation outputs, **Expert design 2 has the shortest mean detection time** and Reduced grid the longest. This does **not** establish that Expert design 2 is a universally optimal trap network: trap counts, placement budgets, undetected replicate frequencies, and parameter sensitivity must also be compared before drawing operational conclusions.
+All nine archived results files contain **2,000 recorded detections each** (18,000 total). This does **not** establish a 100% detection rate, because the total number of attempted runs and any non-detections were not retained. The batch script presently sets `nruns=100`, so the provenance of the 2,000 archived rows per design (e.g., combined batches) also needs documentation. In the current design CSVs, **Reduced grid has 25 traps**, while **each other design has 100**. See [verified descriptive comparison](results/trap_effort_detection_comparison.csv) and [recomputation script](scripts/10_compare_trap_effort.R).
+
+Within the recorded simulation outputs, **Expert design 2 has the shortest mean detection time** and Reduced grid the longest. Expert design 2 is **13.98 days earlier** on average than the 100-trap Grid; the 25-trap Reduced grid is **12.93 days later** on average than Grid. This does **not** establish that Expert design 2 is a universally optimal trap network: trap counts, placement budgets, undetected replicate frequencies, and parameter sensitivity must also be compared before drawing operational conclusions.
 
 ### Outputs available
 - [Detection-time summary](results/summary_statistics.csv)
@@ -81,6 +83,8 @@ Recommended reconstruction sequence, **once the required inputs have been obtain
 3. Select or build a monitoring-design CSV and ensure all spatial coordinates follow the same 10-meter grid convention.
 4. Configure `05_run_many_sims.R` to run a chosen design, controlling stochastic seed and parameter settings; retain detection and non-detection counts separately.
 5. Summarize detection outcomes and percentiles, accounting for non-detection/censoring before comparing strategies.
+
+To recalculate trap counts and detection summaries directly from the archived CSVs, run `Rscript scripts/10_compare_trap_effort.R` from the repository root. This writes a more detailed `results/trap_effort_detection_comparison.csv` including observed-detection quantiles; it deliberately marks detection probability as unavailable.
 
 Before a rigorous rerun, parameterize file paths, document the origins of `ntrees` and `introrisk`, add explicit random seeds, retain every simulation replicate (including failures to detect by day 400), and calculate detection probability alongside conditional detection time.
 
