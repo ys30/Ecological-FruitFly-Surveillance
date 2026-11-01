@@ -25,11 +25,11 @@ This is a **comparative simulation and analysis of supplied and scripted monitor
 
 ### Spatial trap placement: where are traps located?
 
-![Nine-panel spatial comparison of trap locations from the design CSVs](figures/trap_effort_tradeoff.svg)
+![Nine-panel spatial comparison of trap locations from the design CSVs](figures/nine_trap_spatial_layouts.svg)
 
 **Figure 2 shows spatial placement, not a second detection-time ranking.** Each panel plots the original trap coordinates at the same scale (grid pixels; 10 m per pixel), with the layout's trap count and conditional mean detection day labeled for context. The 25-trap reduced grid can be visually compared with the eight 100-trap alternatives. These are simulation layouts, not field-deployment maps.
 
-The charts show **conditional detection-time summaries**, not detection rates. The archived output omits non-detections, and the total number of attempted runs is unavailable.
+Figure 1 summarizes conditional detection times; Figure 2 visualizes trap coordinates and adds those conditional means as annotations. Neither figure reports detection rates. The archived output omits non-detections, and the total number of attempted runs is unavailable.
 
 ## Simulation and model provenance
 The implementation combines generated and externally supplied inputs:
