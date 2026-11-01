@@ -7,6 +7,28 @@ This project **evaluates nine alternative fruit-fly trap-placement layouts** usi
 
 This is a **comparative simulation and analysis of supplied and scripted monitoring designs**, not a newly calibrated biological dispersal model or a field-validated optimization system. Some required spatial inputs and model assumptions come from pre-existing objects whose original construction is not documented in this public repository.
 
+## At a glance
+
+| Project metric | Archived evidence |
+|---|---|
+| Monitoring designs compared | **9** spatial trap layouts |
+| Recorded detection outcomes | **18,000** (2,000 per design) |
+| Trap effort represented | **25 or 100 traps** per layout |
+| Fastest observed conditional mean | **56.26 simulated days** — Expert design 2 (100 traps) |
+| Difference versus regular grid | **13.98 days earlier**, among recorded detections |
+
+**Portfolio takeaway:** Simulated first-detection delays varied substantially across trap layouts. Expert design 2 produced the shortest mean detection day in the archived detected-run results; the 25-trap reduced grid used fewer traps but had a longer conditional detection delay. **These comparisons do not establish detection success probabilities, economic efficiency, or real-world optimality.**
+
+### Detection-time comparison
+
+![Mean detection day across nine trap layouts](figures/detection_time_comparison.svg)
+
+### Monitoring effort versus detection delay
+
+![Number of traps versus mean detection day](figures/trap_effort_tradeoff.svg)
+
+The charts show **conditional detection-time summaries**, not detection rates. The archived output omits non-detections, and the total number of attempted runs is unavailable.
+
 ## Simulation and model provenance
 The implementation combines generated and externally supplied inputs:
 
@@ -49,6 +71,7 @@ All nine archived results files contain **2,000 recorded detections each** (18,0
 Within the recorded simulation outputs, **Expert design 2 has the shortest mean detection time** and Reduced grid the longest. Expert design 2 is **13.98 days earlier** on average than the 100-trap Grid; the 25-trap Reduced grid is **12.93 days later** on average than Grid. This does **not** establish that Expert design 2 is a universally optimal trap network: trap counts, placement budgets, undetected replicate frequencies, and parameter sensitivity must also be compared before drawing operational conclusions.
 
 ### Outputs available
+- [Detection-time comparison chart](figures/detection_time_comparison.svg) and [trap-effort comparison chart](figures/trap_effort_tradeoff.svg)
 - [Detection-time summary](results/summary_statistics.csv)
 - [90th-percentile summaries](results/percentile_90.csv) and [99th-percentile summaries](results/percentile_99.csv)
 - [Bonferroni-adjusted pairwise t-test table](results/pairwise_t_test_results.csv)
@@ -71,6 +94,7 @@ scripts/
 data/         # Nine alternative designs and supporting CSV files
 results/      # Detection-time records, summary statistics, percentiles, tests, figures
 outputs/      # Saved visualizations
+figures/      # Recruiter-facing comparison charts (SVG)
 docs/         # Supporting scientific context and original report
 ```
 
