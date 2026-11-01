@@ -1,0 +1,10 @@
+design,traps,recorded_detections,mean_detection_day,sd_detection_day,days_vs_grid,trap_fraction_vs_grid,detection_probability
+Expert design 2,100,2000,56.255,13.42524,-13.981,1,NA
+Random design 3,100,2000,69.3565,10.8795,-0.880,1,NA
+Random design 1,100,2000,69.6745,10.9516,-0.562,1,NA
+Grid,100,2000,70.236,10.53052,0.000,1,NA
+Random design 2,100,2000,70.316,11.78671,0.080,1,NA
+Clustered design,100,2000,77.177,16.9311,6.941,1,NA
+Expert design 1,100,2000,80.758,14.11995,10.522,1,NA
+Sparse-border design,100,2000,80.786,16.2876,10.550,1,NA
+Reduced grid,25,2000,83.161,14.79241,12.925,0.25,NA
